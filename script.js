@@ -18,3 +18,25 @@ function generarTabla(tabla) {
     }
 }
 generarTabla(10)
+
+/* Actividad 4: Encontrar el número más grande en un arreglo
+Escribe un programa en JavaScript que encuentre y muestre el número más grande en un arreglo dado.
+ */
+
+/* Actividad 5: Contar vocales en una cadena
+Escribe un programa en JavaScript que cuente y muestre el número de vocales en una cadena de texto dada.
+ */
+
+/* Actividad 6: Factorial de un número
+Escribe un programa en JavaScript que calcule y muestre el factorial de un número dado. Por ejemplo, el factorial de 5 es 120 (5 x 4 x 3 x 2 x 1).
+ */
+
+/* Actividad 7: Palíndromo
+Escribe un programa en JavaScript que verifique si una cadena de texto dada es un palíndromo (se lee igual de izquierda a derecha que de derecha a izquierda).
+ */
+
+/* Actividad 8: FizzBuzz
+Escribe un programa en JavaScript que imprima los números del 1 al 100. Pero para múltiplos de tres imprime "Fizz" en lugar del número, y para los múltiplos de cinco imprime "Buzz". Para números que son múltiplos de tres y cinco imprime "FizzBuzz". */
+
+/* Actividad 9: Suma de números en un arreglo
+Escribe un programa en JavaScript que sume todos los números de un arreglo dado. Por ejemplo, si el arreglo es [1, 2, 3, 4, 5], el programa debería imprimir 15. */
