@@ -11,45 +11,58 @@ Escribe un programa en JavaScript que genere y muestre en la consola la tabla de
  */
 
 function generarTabla(tabla) {
-  for (let i = 1; i < 11; i++) {
-    console.log(`${tabla} x ${i} = ${tabla * i}`)
-  }
+    for (let i = 1; i < 11; i++) {
+        console.log(`${tabla} x ${i} = ${tabla * i}`)
+    }
 }
-// generarTabla(10)
+//generarTabla(10)
 
 /* Actividad 4: Encontrar el número más grande en un arreglo
 Escribe un programa en JavaScript que encuentre y muestre el número más grande en un arreglo dado.
  */
 function actividad4() {
-  let numeros = [1, 4, 100, 9, 105, 66, 55]
-  numeros.sort((a, b) => a - b)
-  console.log(numeros[numeros.length - 1])
+    let numeros = [1, 4, 100, 9, 105, 66, 55]
+    numeros.sort((a, b) => a - b)
+    console.log(numeros[numeros.length - 1])
 }
-// actividad4()
+
+function actividad4Segunda() {
+    let numeros = [1, 4, 100, 9, 105, 66, 55]
+    let max = numeros[0];
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] > max) {
+            max = numeros[i];
+        }
+    }
+    console.log(max);
+}
+//actividad4()
+//actividad4Segunda()
 
 /* Actividad 5: Contar vocales en una cadena
 Escribe un programa en JavaScript que cuente y muestre el número de vocales en una cadena de texto dada.
  */
 
 function actividad5(texto) {
-  let vocales = 0
-  let consonantes = 0
-  for (let i = 0; i < texto.length; i++) {
-    if (!isNaN(texto[i])) {
-      continue;
-    } else {
-      if (texto[i] == "a" || texto[i] == 'e' || texto[i] == 'i' || texto[i] == 'o' || texto[i] == 'u') {
-        vocales++
-      } else {
-        consonantes++
-      }
+    let vocales = 0
+    let consonantes = 0
+
+    for (let i = 0; i < texto.length; i++) {
+        if (!isNaN(texto[i])) {
+            continue;
+        } else {
+            if (/[aeiou]/.test(texto[i])) {
+                vocales++
+            } else {
+                consonantes++
+            }
+        }
     }
-  }
-  console.log(`texto: "${texto}""\nVocales: ${vocales}.\nConsonantes: ${consonantes}`)
-
+    console.log(`texto: "${texto}""\nVocales: ${vocales}.\nConsonantes: ${consonantes}`)
 }
+//actividad5("bueno hola")
 
-actividad5("bueno")
+
 /* Actividad 6: Factorial de un número
 Escribe un programa en JavaScript que calcule y muestre el factorial de un número dado. Por ejemplo, el factorial de 5 es 120 (5 x 4 x 3 x 2 x 1).
  */
