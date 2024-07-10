@@ -9,7 +9,7 @@ Escribe un programa en JavaScript que imprima todos los números primos entre un
  */
 
 /* Actividad 3: Generar una tabla de multiplicar
-Escribe un programa en JavaScript que genere y muestre en la consola la tabla de multiplicar del número que elijas. El programa debería pedir al usuario que ingrese un número, y luego imprimir la tabla de multiplicar de ese número del uno al diez.
+Escribe un programa en JavaScript que genere y muestre en la consola la tabla de multiplicar del número que elijas. El programa debería pedir al usuario que ingrese un número, y luego imprimir la tabla de multiplicar de ese número del uno al diez.prueba
  */
 
 function generarTabla(tabla) {
